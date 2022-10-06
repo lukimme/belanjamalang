@@ -1,0 +1,59 @@
+/* bagian dekstop */
+/* nav bar*/
+/* header 1 */
+.header{
+    position: relative;
+    z-index: 9999;
+}
+.header span {
+    font-size: 12px;
+}
+.header .item-header-1{
+    padding: 7px 50px;
+    background-color: #f3f4f5;
+}
+.header .item-header-1 span{
+    color: #999999;
+}
+
+.header .item-header-1 span:hover{
+    color: #e78311;
+    cursor: pointer;
+}
+
+.header span i{
+    font-size: 15px;
+    
+}
+
+/* header 2 */
+.item-header-2{
+    padding: 8px 32px;
+    background-color:#fcb900;
+    box-shadow: rgba(0,0,0,0.07) 0px 4px 6px -1px;
+}
+ .item-header-2 .img-hg{
+    height: 50px;
+ }
+.item-header-2 .text-katagori{
+    padding: 2px 5px;
+}
+
+.item-header-2 .text-katagori:hover{
+   background-color:#b88700 !important;
+   cursor: pointer !important;
+   color: white;
+   border-radius: 4px;
+}
+
+.item-header-2 span{
+    color: white;
+    font-size: 14px;
+}
+
+.item-header-2 .wrap-icon-search i{
+    position: relative;
+    width: 100%;
+    padding: 5px 5px;
+    background-color: #999999;
+}
