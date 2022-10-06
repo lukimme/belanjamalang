@@ -25,18 +25,20 @@ body {
 
 .fontkat {
     font-size: 12px;
-    font-family: poppins, sans-serif;
 }
 
 .rowkat {
-    margin-right: 260px;
-    margin-left: 260px;
+    margin: 100px 260px;
 }
 
 .condeks {
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container {
+    margin-top: 60px;
 }
 
 
