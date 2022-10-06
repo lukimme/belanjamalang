@@ -28,7 +28,9 @@ body {
 }
 
 .rowkat {
-    margin: 100px 260px;
+    margin-top: 100px ;
+    margin-left: 260px;
+    margin-right: 260px;
 }
 
 .condeks {
