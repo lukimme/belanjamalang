@@ -3,6 +3,22 @@
 
 
 /* Style Dekstop */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
 .iconkat {
     width: 40px;
 }
@@ -15,4 +31,90 @@
 .rowkat {
     margin-right: 260px;
     margin-left: 260px;
+}
+
+.condeks {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Tampilan Mobile */
+.conbil{
+    display: none;
+}
+
+@media (max-width: 576px) { 
+
+.conbil {
+    display: contents;
+}
+
+.contab {
+    display: none;
+}
+
+.condeks {
+    display: none;
+}
+
+ }
+
+
+
+ /* Tampilan Tablet */
+ @media (min-width: 768px) {
+
+.contab {
+    display: contents;
+}
+
+.conbil {
+    display: none;
+}
+
+.condeks {
+    display: none;
+}
+
+ }
+
+
+
+/* Diskon */
+body {
+    background-color: #eee
+}
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: #fed85d;
+    justify-content: center;
+    align-items: center
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
 }
