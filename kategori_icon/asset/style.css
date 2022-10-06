@@ -28,7 +28,8 @@ body {
 }
 
 .rowkat {
-    margin-top: 100px ;
+    margin-top: 100px;
+    max-width: 968px;
     margin-left: auto;
     margin-right: auto;
 }
