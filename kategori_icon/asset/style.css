@@ -46,46 +46,6 @@ body {
 
 
 
-/* Tampilan Mobile */
-.conbil{
-    display: none;
-}
-
-@media (max-width: 576px) { 
-
-.conbil {
-    display: contents;
-}
-
-.contab {
-    display: none;
-}
-
-.condeks {
-    display: none;
-}
-
- }
-
-
-
- /* Tampilan Tablet */
- @media (min-width: 768px) {
-
-.contab {
-    display: contents;
-}
-
-.conbil {
-    display: none;
-}
-
-.condeks {
-    display: none;
-}
-
- }
-
 
 
 /* Diskon */
