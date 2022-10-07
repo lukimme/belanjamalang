@@ -2,10 +2,10 @@
 /* nav bar*/
 /* header 1 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-*{
-  font-family: 'Poppins','sans-serif';
+* {
+  font-family: "Poppins", "sans-serif";
 }
 .header {
   position: relative;
@@ -119,28 +119,28 @@
 .line {
   font-size: 20%;
   color: #d48001;
-  
+
   font-weight: 100;
 }
-.header .btn{
+.header .btn {
   border-radius: 8px;
   font-size: 13px;
   background-color: #d48001;
   font-weight: bold;
 }
-.header .btn:first-child{
+.header .btn:first-child {
   background-color: white;
   border: 1px soli #999999;
   color: #ec8f04;
   font-weight: bold;
 }
-.text-h3{
+.text-h3 {
   margin-left: 230px;
 }
-.text-h3 span{
+.text-h3 span {
   font-size: 12px;
 }
-.text-h3 span:hover{
+.text-h3 span:hover {
   font-size: 12px;
   cursor: pointer;
   color: black;
