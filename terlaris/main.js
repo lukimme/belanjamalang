@@ -1,34 +1,17 @@
-  var swiper = new Swiper(".mySwiper", {
-    
-    slidesPerView: 3,
-    loop: true,
-    spaceBetween: 40,
-    // autoplay: {
-    // delay:4000,
-    // disableOnInteraction: false,
-    // },
-    breakpoints: {
-    0: {
-    slidesPerView: 1,
-    },
-    550: {
-    slidesPerView: 2,
-    },
-    800: {
-    slidesPerView: 3,
-    },
-    1000: {
-    slidesPerView: 3,
-    },
-    },
-    pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    },
-    navigation: {
-    nextEl: ".swiper-button-next",
-    prevel: ".swiper-button-prev",
-    },
-    });
-            
-      
+const productContainers = [...document.querySelectorAll('.product-container')];
+
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
