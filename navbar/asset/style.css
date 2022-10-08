@@ -135,7 +135,7 @@
   font-weight: bold;
 }
 .text-h3 {
-  margin-left: 230px;
+  margin-left: 225px;
 }
 .text-h3 span {
   font-size: 12px;
@@ -145,4 +145,33 @@
   cursor: pointer;
   color: black;
   transition: 0.8s;
+}
+.container .benner-radius{
+  border-radius: 8px;
+}
+.container .ik-bg{
+  background-color: #ec8f04;
+  border-radius: 8px;
+}
+.container .img1-ukuran{
+  height:350px ;
+  object-fit: cover;
+  object-position: center;
+ /* margin-top: 30px; */
+  border-radius: 8px;
+}
+.ikm{
+  margin-top: 10px;
+  margin-bottom: -30px;
+  font-weight:bolder;
+  color: white;
+}
+.container .img2-ukuran{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-radius: 8px;
 }
