@@ -61,7 +61,6 @@ body {
     border-radius: 30px;
     font-size: 20px;
     margin: auto;
-
 }
 
 .btn:hover {
@@ -93,9 +92,9 @@ body {
 
 .product-box {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    /* grid-template-columns: repeat(auto-fit, minmax(10px, auto)); */
     flex-direction: column;
-    width: 300px;
+    /* width: 300px; */
     padding: 15px;
     box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
     border-radius: 10px;
@@ -107,7 +106,6 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-
 }
 
 .p-img a,
@@ -678,12 +676,55 @@ body {
     background: var(--orange-color);
 }
 
+/* Brand */
+.brand {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand h1 {
+    border-radius: 8px 8px 0 0;
+    background: var(--orange-color);
+    color: var(--bg-color);
+    text-align: center;
+    font-weight: 600;
+}
+
+.ma-bg {
+    border-radius: 0 0 8px 8px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 80px;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+}
+
+.marquee {
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    animation: animate 15s linear infinite;
+}
+
+.marquee img {
+    margin-left: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes animate {
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
 /* Tablet Responsive */
 @media (max-width:768px) {
 
     .products,
     .fashion,
-    .kuliner {
+    .kuliner,
+    .brand {
         max-width: 680px;
     }
 
@@ -697,9 +738,7 @@ body {
         font-size: 28px;
         padding: 18px;
         border-radius: 50%;
-        ;
     }
-
 
 }
 
@@ -708,7 +747,8 @@ body {
 
     .products,
     .fashion,
-    .kuliner {
+    .kuliner,
+    .brand {
         max-width: 510px;
     }
 
@@ -722,7 +762,114 @@ body {
         font-size: 28px;
         padding: 18px;
         border-radius: 50%;
-        ;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    .products,
+    .fashion,
+    .kuliner,
+    .brand {
+        max-width: 340px;
+    }
+
+    .slider-btns {
+        display: none;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 8px 8px;
+        font-size: 15px;
+        column-gap: 6px;
+    }
+
+    .btn .bx {
+        font-size: 15px;
+    }
+
+    .hero {
+        font-size: 12px;
+        padding: 0 14px;
+        font-size: 13px;
+        grid-area: hero;
+        width: 120px;
+        height: 300px;
+    }
+
+    .hero2 {
+        margin-top: -300px;
+        font-size: 12px;
+        padding: 0 14px;
+        font-size: 13px;
+        grid-area: hero;
+        width: 120px;
+        height: 300px;
+    }
+
+    .product-container,
+    .product-container2 {
+        width: 100%;
+    }
+
+    .product-image {
+        width: 180px;
+        height: 157px;
+    }
+
+    .headingg {
+        margin-top: 56px;
+        color: var(--bg-color);
+    }
+
+    .sub-heading {
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+
+    .btn-box {
+
+        font-size: 12px;
+        padding: 5px 10px;
+        column-gap: 10px;
+        width: 100%;
+    }
+
+    .btn-box2 {
+        font-size: 12px;
+        padding: 5px 10px;
+        column-gap: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn-box .bx {
+        font-size: 15px;
+    }
+
+    .btn-box2 .bx {
+        font-size: 15px;
+    }
+
+    .brand h1 {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .ma-bg {
+        height: 60px;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+        margin-top: 140px;
     }
 
 }
