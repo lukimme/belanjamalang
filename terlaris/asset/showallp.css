@@ -1,0 +1,255 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Variables Colors */
+:root {
+    --orange-color: #ec8f04;
+    --light-orange-color: #ffa928;
+    --text-color: #333333;
+    --bg-color: #fff;
+    --new: #ec8f0473;
+}
+
+/* Custom Scroll Bar */
+html::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: var(--orange-color);
+}
+
+/* Produk Terlaris Start */
+section {
+    padding: 100px 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 968px;
+    margin: auto;
+    width: 100%;
+}
+
+/* Fashion product */
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.heading h1 {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.heading span {
+    color: var(--orange-color);
+}
+
+.products-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 23px;
+}
+
+.box {
+    padding: 10px;
+    background: var(--bg-color);
+    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+    border-radius: 8px;
+    display: grid;
+    row-gap: 14px;
+}
+
+.box img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.box-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.title-price h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title-price span {
+    font-weight: 500;
+}
+
+.box-text .bx {
+    padding: 10px;
+    font-size: 20px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 40px;
+}
+
+.products-content .box-text {
+    background: var(--orange-color);
+}
+
+.products-content .box-text h3 {
+    color: var(--bg-color);
+}
+
+.products-content .box-text span {
+    color: var(--bg-color);
+}
+
+.products-content .box-text .bx {
+    background: var(--bg-color);
+    color: var(--orange-color);
+}
+
+.products-content .box-text .bx:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.product-box {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(10px, auto)); */
+    flex-direction: column;
+    /* width: 300px; */
+    padding: 15px;
+    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+    border-radius: 10px;
+    margin: 20px 10px;
+    position: relative;
+}
+
+.p-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.p-img a,
+.p-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.p-img a img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.p-box-text {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.product-category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-category span {
+    color: #acacac;
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+.product-title {
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s all ease;
+}
+
+.product-title:hover {
+    color: #111111;
+    opacity: .7;
+    transition: .3s all ease;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.price-buy .bx-heart {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 15px;
+    color: var(--orange-color);
+}
+
+.price-buy .p-price {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.price-buy .bx-cart-alt {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background: var(--orange-color);
+    color: var(--bg-color);
+    font-size: 20px;
+    border-radius: 5px 0 5px 0;
+}
+
+.price-buy .bx-cart-alt:hover {
+    background: var(--text-color);
+    transition: .2s all linear;
+}
+
+/* Discount */
+.p-discount {
+    position: absolute;
+    left: -1px;
+    top: 9px;
+    width: 33px;
+    height: 18px;
+    color: #ffffff;
+    background: var(--orange-color);
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    z-index: 100;
+}
