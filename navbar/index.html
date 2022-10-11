@@ -1,170 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="asset/style.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <div class="header">
-      <div
-        class="item-header-1 d-flex justify-content-between align-items-center"
-      >
-        <div class="d-flex">
-          <span>mau cari apa semua ada</span>
-        </div>
-        <div class="d-flex">
-          <span class="mx-2">Tentang Kami</span>
-          <span class="mx-1"><i class="fab fa-facebook-f"></i></span>
-          <span class="mx-1"><i class="fab fa-twitter"></i></span>
-          <span class="mx-1"><i class="fab fa-youtube"></i></span>
-        </div>
+  <link rel="stylesheet" href="asset/style.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="item-header-1 d-flex justify-content-between align-items-center">
+      <div class="d-flex">
+        <span>mau cari apa semua ada</span>
       </div>
-      <!-- header 2 -->
-      <div class="item-header-2 filex-column">
-        <div class="d-flex justify-content-between align-items-center">
-          <img class="img-hg" src="asset/img/logobm.png" alt="" />
-          <span class="mx-2 text-kategori">Kategori</span>
-          <div class="wrap-cari">
-            <input type="text" class="form-control" placeholder="Cari barang" />
-            <div class="wrap-icon-cari">
-              <img class="img-cari" src="asset/img/cari.svg" alt="" />
-            </div>
-          </div>
-          <div class="wrap-img-keranjang ms-2">
-            <img class="img-keranjang" src="asset/img/keranjang.png" alt="" />
-          </div>
-          <span class="mx-2 line">|</span>
-          <div class="d-flex">
-            <button class="btn font-wight-bold mx-2">Iklan</button>
-            <button class="btn font-wight-bold text-white">Jualan</button>
-          </div>
-        </div>
-
-        <div class="text-h3 d-flex">
-          <span class="me-4">Iklan Masyarakat</span>
-          <span class="me-4">Info Penjualan Produk</span>
-          <span class="me-4">Cara Beli</span>
-          <span class="me-4">Blog</span>
-          <span class="me-4">Forum</span>
-        </div>
+      <div class="d-flex">
+        <span class="mx-2">Tentang Kami</span>
+        <span class="mx-1"><i class="fab fa-facebook-f"></i></span>
+        <span class="mx-1"><i class="fab fa-twitter"></i></span>
+        <span class="mx-1"><i class="fab fa-youtube"></i></span>
       </div>
     </div>
-
-    <!-- banner -->
-
-    <div class="container justify-content-center">
-      <div class="row mt-4">
-        <div class="col-9">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner benner-radius">
-              <div class="carousel-item active">
-                <img
-                  src="asset/img/b1.png"
-                  class="img-fluid img1-ukuran"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="asset/img/b2.png"
-                  class="img-fluid img1-ukuran"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="asset/img/b3.jpg"
-                  class="img-fluid img1-ukuran"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <!-- header 2 -->
+    <div class="item-header-2 filex-column">
+      <div class="d-flex justify-content-between align-items-center">
+        <img class="img-hg" src="asset/img/logobm.png" alt="" />
+        <span class="mx-2 text-kategori">Kategori</span>
+        <div class="wrap-cari">
+          <input type="text" class="form-control" placeholder="Cari barang" />
+          <div class="wrap-icon-cari">
+            <img class="img-cari" src="asset/img/cari.svg" alt="" />
           </div>
         </div>
-        <div class="col ik-bg">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide carousel-fade text-center"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <h6 class="ikm">Iklan Masyarakat</h6>
-              <div class="carousel-item active">
-                <img
-                  src="asset/img/i1.jpg"
-                  class="img-fluid img2-ukuran"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item active">
-                <img
-                  src="asset/img/i3.png"
-                  class="img-fluid img2-ukuran"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="asset/img/i2.png"
-                  class="img-fluid img2-ukuran"
-                  alt="..."
-                />
-              </div>
+        <div class="wrap-img-keranjang ms-2">
+          <img class="img-keranjang" src="asset/img/keranjang.png" alt="" />
+        </div>
+        <span class="mx-2 line">|</span>
+        <div class="d-flex">
+          <button class="btn font-wight-bold mx-2">Iklan</button>
+          <button class="btn font-wight-bold text-white">Jualan</button>
+        </div>
+      </div>
+
+      <div class="text-h3 d-flex">
+        <span class="me-4">Iklan Masyarakat</span>
+        <span class="me-4">Info Penjualan Produk</span>
+        <span class="me-4">Cara Beli</span>
+        <span class="me-4">Blog</span>
+        <span class="me-4">Forum</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- banner -->
+
+  <div class="container justify-content-center">
+    <div class="row mt-4">
+      <div class="col-9">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner benner-radius">
+            <div class="carousel-item active">
+              <img src="asset/img/b1.png" class="img-fluid img1-ukuran" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="asset/img/b2.png" class="img-fluid img1-ukuran" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="asset/img/b3.jpg" class="img-fluid img1-ukuran" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col ik-bg">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <h6 class="ikm">Iklan Masyarakat</h6>
+            <div class="carousel-item active">
+              <img src="asset/img/i1.jpg" class="img-fluid img2-ukuran" alt="..." />
+            </div>
+            <div class="carousel-item active">
+              <img src="asset/img/i3.png" class="img-fluid img2-ukuran" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="asset/img/i2.png" class="img-fluid img2-ukuran" alt="..." />
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
