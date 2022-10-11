@@ -39,6 +39,7 @@ img {
 }
 
 .img-display {
+    margin: 0 10px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -55,9 +56,12 @@ img {
 
 .img-select {
     display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .img-item {
+    padding: 3px 0;
     margin: 5px;
 }
 
@@ -85,7 +89,6 @@ img {
     font-weight: 700;
     position: relative;
     color: var(--text-color);
-    margin: 16px 0;
 }
 
 /* Price Product */
