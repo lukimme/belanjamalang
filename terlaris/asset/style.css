@@ -611,8 +611,14 @@ body {
 }
 
 .title-price h3 {
+    color: var(--bg-color);
+    cursor: pointer;
     font-size: 14px;
     font-weight: 600;
+}
+
+.title-price h3:hover {
+    opacity: .5;
 }
 
 .title-price span {
