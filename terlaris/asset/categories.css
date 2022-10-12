@@ -71,6 +71,7 @@ body {
 }
 
 .right-categories img {
+
     width: 18px;
 }
 
@@ -86,16 +87,18 @@ body {
 }
 
 .product-categories {
-    padding: 10px 10px;
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 23px;
-    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+
     border-radius: 8px;
 }
 
 .box {
-    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+    padding: 10px;
     background: var(--bg-color);
     display: grid;
     row-gap: 14px;
