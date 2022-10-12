@@ -451,11 +451,30 @@ body {
 }
 
 
+/* Cart */
+.btnB {
+    padding: 8px 16px;
+    background: var(--orange-color);
+    color: var(--bg-color);
+    border-radius: 30px;
+
+}
+
+.btnB:hover {
+    background: var(--light-orange-color);
+    transition: .2s ease;
+    color: black;
+}
+
 
 
 /* cart_empty */
 .btnBS {
     padding: 14px 19px;
+    background: var(--orange-color);
+    color: var(--bg-color);
+    border-radius: 30px;
+    margin: auto;padding: 14px 19px;
     background: var(--orange-color);
     color: var(--bg-color);
     border-radius: 30px;
