@@ -451,13 +451,13 @@ body {
 }
 
 
-/* Cart */
+/* Customer Cart */
 .btnB {
     padding: 8px 16px;
     background: var(--orange-color);
     color: var(--bg-color);
     border-radius: 30px;
-
+    margin: 0 100px;
 }
 
 .btnB:hover {
