@@ -32,7 +32,7 @@ body {
 }
 
 .categories-top {
-    margin-top: 80px;
+    margin-top: 30px;
     border-radius: 8px;
     height: 80px;
     max-width: 968px;
@@ -144,11 +144,9 @@ body {
 }
 
 .product-categories {
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 23px;
-
     border-radius: 8px;
 }
 
@@ -183,6 +181,11 @@ body {
 .title-price h3 {
     font-size: 16px;
     font-weight: 600;
+}
+
+.title-price a h3:hover {
+    transition: .3s ease;
+    color: var(--text-color);
 }
 
 .title-price span {
@@ -222,20 +225,45 @@ body {
 /* * Mobile Related Product */
 @media (max-width: 370px) {
 
+    .categories-top {
+        margin-top: 20px;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .categories-top h3 {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    .categories-short {
+        padding: 5px;
+        max-width: 260px;
+        margin-top: 10px;
+    }
+
+    .categories-short li a {
+        text-align: center;
+        font-size: 14px;
+    }
+
     .left-categories {
-        display: flex;
+        display: none;
     }
 
     .right-categories {
+        margin-top: -60px;
         margin-left: 0px;
-        width: 0px;
+        width: 330px;
+        columns: 2;
     }
 
     .product-categories {
+        display: grid;
         margin-left: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-        gap: 23px;
-
+        grid-template-columns: repeat(auto-fit, minmax(155px, auto));
+        gap: 33px;
         border-radius: 8px;
     }
 
@@ -247,14 +275,26 @@ body {
         background: var(--bg-color);
         display: grid;
         row-gap: 14px;
+
     }
 
     .box img {
         border-radius: 8px;
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
         object-position: center;
+    }
+
+    .title-price h3,
+    .title-price span {
+        font-size: 13px;
+    }
+
+    .box-text .bx {
+        margin-top: 25px;
+        padding: 5px;
+        font-size: 10px;
     }
 
 }
