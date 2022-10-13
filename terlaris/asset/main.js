@@ -34,3 +34,15 @@ document.querySelector('.img-showcase').style.transform =
 `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
 
+ let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.left-categories');
+
+      menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+      }
+
+      window.onscroll = () => {
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('active');
+      }

@@ -31,6 +31,13 @@ body {
     color: var(--text-color);
 }
 
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
 .categories-top {
     margin-top: 30px;
     border-radius: 8px;
@@ -225,6 +232,11 @@ body {
 /* * Mobile Related Product */
 @media (max-width: 370px) {
 
+    #menu-icon {
+        display: initial;
+    }
+
+
     .categories-top {
         margin-top: 20px;
         max-width: 330px;
@@ -250,7 +262,19 @@ body {
     }
 
     .left-categories {
+        position: absolute;
+        top: -200px;
+        margin-left: 35px;
+        margin-right: 5px;
+        width: 80%;
+        transition: .2s all linear;
+        text-align: left;
         display: none;
+    }
+
+    .left-categories.active {
+        top: 20px;
+        display: block;
     }
 
     .right-categories {
