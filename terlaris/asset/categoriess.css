@@ -237,6 +237,17 @@ body {
     transition: .3s ease;
 }
 
+@media screen and (max-width: 980px) {
+    .main-content {
+        margin-right: 20px;
+        margin-top: 8px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .side-bar {
+        min-height: 11vh;
+    }
+}
 
 /* mobile responsive */
 
