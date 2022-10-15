@@ -34,8 +34,8 @@ document.querySelector('.img-showcase').style.transform =
 `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
 
- let menu = document.querySelector('#menu-icon');
-      let navbar = document.querySelector('.left-categories');
+ let menu = document.querySelector('.humbergermenu');
+      let navbar = document.querySelector('.side-bar');
 
       menu.onclick = () => {
         menu.classList.toggle('bx-x');
@@ -46,3 +46,4 @@ document.querySelector('.img-showcase').style.transform =
         menu.classList.remove('bx-x');
         navbar.classList.remove('active');
       }
+
