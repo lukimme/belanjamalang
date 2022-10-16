@@ -1206,6 +1206,113 @@ body {
 /* Mobile Responsive */
 @media (max-width: 576px) {
 
+    .container .ik-bg {
+        margin-right: 10px;
+    }
+
+    .text-kategori {
+        display: none;
+    }
+
+    .item-header-2 .img-hg {
+        height: 40px;
+    }
+
+    .wrap-cari {
+        display: none;
+    }
+
+    .header .item-header-1 {
+        padding: 6px 35px;
+        background-color: #ec8f04;
+        margin-bottom: 1px;
+
+    }
+
+    .header .item-header-1 span {
+        color: white;
+
+    }
+
+    .or1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .or1::before,
+    .or1::after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        height: 40px;
+        width: 40px;
+        background-color: #ec8f04;
+    }
+
+    .or1::after {
+        border-radius: 25px 0 0 0;
+        background-color: white;
+    }
+
+    .or2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        /* background-color: aqua; */
+    }
+
+    .or2::before,
+    .or2::after {
+
+        content: ' ';
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        height: 40px;
+        width: 40px;
+        background-color: #ec8f04;
+    }
+
+    .or2::after {
+        border-radius: 0 25px 0 0;
+        background-color: white;
+
+    }
+
+    .container .bn-bg {
+        /* background-color:  white; */
+        /* margin-top: 10px; */
+        /* margin-left: -10px; */
+        /* border-radius: 8px; */
+        margin-bottom: -40px;
+        z-index: 9999;
+    }
+
+    .container .ik-bg {
+        /* background-color:  white; */
+        margin-top: 10px;
+        margin-left: -10px;
+        border-radius: 8px;
+        z-index: 9999;
+    }
+
+    .ikm {
+        margin-top: 10px;
+        /* margin-bottom: -65px; */
+        /* height: 40px; */
+        /* font-weight: bolder; */
+        font-size: 8px;
+        color: white;
+    }
+
     .slider-btns {
         display: none;
     }
