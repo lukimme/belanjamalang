@@ -43,6 +43,321 @@ body {
     color: var(--text-color);
 }
 
+.header {
+    position: relative;
+    z-index: 9999;
+}
+
+.header span {
+    font-size: 12px;
+}
+
+.header .item-header-1 {
+    padding: 6px 35px;
+    background-color: #f3f4f5;
+}
+
+.header .item-header-1 span {
+    color: #999999;
+}
+
+.header .item-header-1 span:hover {
+    color: #ec8f04;
+    cursor: pointer;
+}
+
+.header span i {
+    font-size: 15px;
+}
+
+/* header 2 */
+.item-header-2 {
+    padding: 8px 32px;
+    background-color: #ec8f04;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 6px -1px;
+}
+
+.item-header-2 .img-hg {
+    height: 50px;
+}
+
+.item-header-2 .text-kategori {
+    padding: 2px 5px;
+}
+
+.item-header-2 .text-kategori:hover {
+    background-color: #d48001 !important;
+    cursor: pointer !important;
+    color: white;
+    border-radius: 4px;
+    transition: 0.8s;
+}
+
+.item-header-2 span {
+    color: white;
+    font-size: 16px;
+}
+
+.item-header-2 .img-cari,
+.item-header-2 .img-keranjang {
+    width: 18px;
+}
+
+.item-header-2 .wrap-cari {
+    position: relative;
+    background-color: #ec8f04;
+    width: 100%;
+    height: 35px;
+}
+
+.item-header-2 .wrap-cari .form-control {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    border-radius: 50px;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.item-header-2 .wrap-cari .form-control::placeholder {
+    color: #f3f4f5;
+    font-size: 10px;
+}
+
+.item-header-2 .wrap-cari .form-control:focus {
+    box-shadow: none;
+    border-radius: 50px;
+    border: 1px solid #999999;
+}
+
+.item-header-2 .wrap-cari .wrap-icon-cari {
+    background-color: #f3f4f5;
+    position: absolute;
+    border-radius: 0 50px 50px 0;
+    right: 0;
+    height: 100%;
+    width: 4%;
+}
+
+.item-header-2 .wrap-cari .wrap-icon-cari .img-cari {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-header-2 .wrap-img-keranjang {
+    position: relative;
+    background-color: transparent;
+    height: max-content;
+    width: max-content;
+    padding: 2px 5px;
+    border-radius: 3px;
+    transition: 0.8s;
+}
+
+.item-header-2 .wrap-img-keranjang:hover {
+    background-color: #d48001 !important;
+    cursor: pointer !important;
+    border-radius: 4px;
+}
+
+.line {
+    font-size: 20%;
+    color: #d48001;
+
+    font-weight: 100;
+}
+
+.header .btn {
+    border-radius: 8px;
+    font-size: 13px;
+    background-color: #d48001;
+    font-weight: bold;
+}
+
+.header .btn:first-child {
+    background-color: white;
+    border: 1px soli #999999;
+    color: #ec8f04;
+    font-weight: bold;
+}
+
+.text-h3 {
+    margin-left: 225px;
+}
+
+.text-h3 span {
+    font-size: 12px;
+}
+
+.text-h3 span:hover {
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    transition: 0.8s;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .benner-radius {
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.container .ik-bg {
+    /* background-color: #ec8f04; */
+    border-radius: 8px;
+}
+
+.container .img1-ukuran {
+    /* height: 290px; */
+    /* object-fit: cover; */
+    /* object-position: center center; */
+    /* margin-top: 30px; */
+    border-radius: 8px;
+}
+
+.ikm {
+    margin-top: 10px;
+    margin-bottom: -40px;
+    font-weight: bolder;
+    color: white;
+}
+
+.container .img2-ukuran {
+    /* height: 250px; */
+    /* width: 300px; */
+    /* object-fit: cover; */
+    /* object-position: center center; */
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+
+  .container .ik-bg {
+    margin-right: 10px;
+  }
+
+
+} */
+
+
+.iconkat {
+    width: 40px;
+}
+
+.fontkat {
+    font-size: 12px;
+}
+
+.rowkat {
+    margin-top: 100px;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.condeks {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+
+
+
+/* Produk Terbaru */
+.categories {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.categories-container .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: .5rem;
+}
+
+.categories-container .box img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.categories-container .box span {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.categories-container .box .bx {
+    padding: 10px;
+    background: var(--green-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -8px;
+    display: none;
+}
+
+.categories-container .box .bx:hover {
+    background: var(--light-orange-color);
+    transition: .2s all linear;
+}
+
+.categories-container .box:hover .bx {
+    display: block;
+    transition: .2s all linear;
+}
+
+.categories-container .box1 {
+    background: #fef4ea;
+}
+
+.categories-container .box2 {
+    background: #e9f4e3;
+}
+
+.categories-container .box3 {
+    background: #faeaea;
+}
+
+.categories-container .box4 {
+    background: #eeeef9;
+}
+
+.categories-container .box5 {
+    background: #f7f6d7;
+}
+
+
 .container_ {
     max-width: 968px;
     margin: auto;
@@ -71,7 +386,13 @@ body {
     margin: auto;
 }
 
+.btn .bx:hover {
+    background: var(--orange-color);
+    color: var(--bg-color);
+}
+
 .btn:hover {
+    color: var(--bg-color);
     background: var(--text-color);
     transition: .2s ease;
 }
@@ -85,6 +406,7 @@ body {
 }
 
 .heading h1 {
+    font-size: 25px;
     color: var(--text-color);
     font-weight: 600;
 }
@@ -94,7 +416,10 @@ body {
     color: var(--orange-color);
 }
 
-.products {
+
+
+.products,
+.products-diskon {
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
@@ -222,11 +547,13 @@ body {
     color: var(--light-orange-color);
 }
 
+
+
 /* End Product Terlaris */
 
 /* Fashion Product Start*/
 .fashion {
-    margin-top: -30px;
+    margin-top: 10px;
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
@@ -235,7 +562,10 @@ body {
 .headerr {
     display: grid;
     grid-template-areas:
-        'hero productt'
+        'hero productt';
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 220px 1fr;
+
 }
 
 .hero {
@@ -251,7 +581,9 @@ body {
 }
 
 .headingg {
-    margin-top: 88px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 90px;
     color: var(--bg-color);
 }
 
@@ -387,6 +719,10 @@ body {
     font-weight: 600;
 }
 
+.title-price h3:hover {
+    color: var(--text-color);
+}
+
 .title-price span {
     font-weight: 500;
 }
@@ -430,8 +766,8 @@ body {
     margin-top: 150px;
     box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
     background: var(--text-color);
-    left: 3px;
-    z-index: 9000;
+    margin-right: 1px;
+    z-index: 900;
 }
 
 .nxt-btn {
@@ -441,7 +777,7 @@ body {
     margin-top: 150px;
     box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
     background: var(--text-color);
-    right: 7px;
+    margin-left: 700px;
 }
 
 .nxt-btn:hover {
@@ -454,7 +790,7 @@ body {
 
 /* Kuliner Start */
 .kuliner {
-    margin-top: -30px;
+    margin-top: -205px;
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
@@ -644,8 +980,8 @@ body {
 }
 
 /* Button Fashion Slider */
-.pre-btn,
-.nxt-btn {
+.pre-btn2,
+.nxt-btn2 {
 
     color: var(--bg-color);
     border: none;
@@ -662,32 +998,32 @@ body {
 }
 
 
-.pre-btn {
+.pre-btn2 {
     padding: 15px;
     border-radius: 50%;
     height: 10%;
     margin-top: 150px;
     box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
     background: var(--text-color);
-    left: 3px;
+    margin-left: -4px;
     z-index: 9000;
 }
 
-.nxt-btn {
+.nxt-btn2 {
     padding: 15px;
     border-radius: 50%;
     height: 10%;
     margin-top: 150px;
     box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
     background: var(--text-color);
-    right: 7px;
+    margin-left: 698px;
 }
 
-.nxt-btn:hover {
+.nxt-btn2:hover {
     background: var(--orange-color);
 }
 
-.pre-btn:hover {
+.pre-btn2:hover {
     background: var(--orange-color);
 }
 
@@ -701,6 +1037,7 @@ body {
 }
 
 .brand h1 {
+    font-size: 23px;
     border-radius: 8px 8px 0 0;
     background: var(--orange-color);
     color: var(--bg-color);
@@ -709,6 +1046,7 @@ body {
 }
 
 .ma-bg {
+    margin-top: -7px;
     border-radius: 0 0 8px 8px;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -743,6 +1081,7 @@ body {
 }
 
 .memberof-text h2 {
+    font-weight: 600;
     font-size: 22px;
     margin-bottom: 14px;
 }
@@ -750,6 +1089,7 @@ body {
 
 
 .memberof {
+    margin-bottom: 38px;
     display: flex;
     width: 110px;
     gap: 20px;
@@ -781,6 +1121,7 @@ body {
 }
 
 .footer-box a {
+    text-decoration: none;
     color: var(--bg-color);
     margin-bottom: 14px;
 }
@@ -817,6 +1158,8 @@ body {
     text-align: center;
     padding: 15px;
 }
+
+
 
 @keyframes animate {
     100% {
@@ -929,6 +1272,15 @@ body {
         font-size: 15px;
     }
 
+    .headerr {
+        display: grid;
+        grid-template-areas:
+            'hero productt';
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 120px 1fr;
+
+    }
+
     .hero {
         font-size: 12px;
         padding: 0 14px;
@@ -1013,9 +1365,14 @@ body {
     }
 
     .pre-btn,
-    .nxt-btn {
-        margin-top: 140px;
+    .nxt-btn,
+    .pre-btn2,
+    .nxt-btn2 {
+        display: none;
     }
+
+
+
 
 
 }
