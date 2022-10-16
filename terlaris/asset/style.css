@@ -77,6 +77,8 @@ body {
 }
 
 .heading {
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -300,7 +302,6 @@ body {
 
 .product-container {
     border-radius: 0 8px 8px 0;
-    padding: 0 0;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
@@ -318,7 +319,7 @@ body {
 
 .product-image {
     position: relative;
-    width: 162px;
+    width: 152px;
     height: 162px;
     overflow: hidden;
 }
@@ -692,6 +693,8 @@ body {
 
 /* Brand */
 .brand {
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
@@ -859,6 +862,10 @@ body {
 /* Mobile Responsive */
 @media (max-width: 576px) {
 
+    .slider-btns {
+        display: none;
+    }
+
     .products,
     .fashion,
     .kuliner,
@@ -909,12 +916,12 @@ body {
     }
 
     .heading h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .btn {
         padding: 8px 8px;
-        font-size: 15px;
+        font-size: 12px;
         column-gap: 6px;
     }
 
@@ -946,9 +953,18 @@ body {
         width: 100%;
     }
 
+    .productt {
+        padding: 20px 20px 20px 0;
+    }
+
     .product-image {
         width: 180px;
         height: 157px;
+    }
+
+    .product-thumb {
+        width: 100%;
+        height: 100%;
     }
 
     .headingg {
