@@ -543,10 +543,21 @@ body {
 
 
     /* Rekomendasi */
-    products-content {
-        display: inline;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-        /* gap: 23px; */
+
+    /* .products {
+        grid-template-columns: repeat(3,1fr);
+    } */
+
+    .products-content {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 10px;
+        gap: 2px;
+    }
+
+    .heading h1 {
+        font-weight: 600;
+        margin-left: 10px;
     }
     
     .box {
@@ -619,12 +630,12 @@ body {
         display: flex;
         grid-template-columns: repeat(3,1fr);
         flex-direction: column;
-        width: 100px;
-        padding: 15px;
+        width: 93px;
+        padding: 10px;
         box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
         border-radius: 10px;
-        margin: 10px 10px;
-        position: relative;
+        margin: 7px 0;
+        /* position: relative; */
     }
     
     .p-img-container {
@@ -662,7 +673,7 @@ body {
     
     .product-category span {
         color: #acacac;
-        font-size: 12px;
+        font-size: 10px;
         margin: 5px 0px;
     }
     
@@ -671,7 +682,7 @@ body {
         font-weight: 600;
         text-decoration: none;
         transition: .3s all ease;
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .price-buy {
@@ -690,7 +701,7 @@ body {
     }
     
     .price-buy .p-price {
-        font-size: 12px;
+        font-size: 10px;
         color: #333333;
         font-weight: 700;
     }
@@ -716,6 +727,37 @@ body {
     /* Total */
     .con_total_mobile {
         /* margin-top: 500px; */
+    }
+
+    .card_total {
+        height: 100px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .total_price {
+        font-size: 13px;
+        font-weight: bolder;
+    }
+
+    .button_buy {
+        text-align: center;
+        background-color: #ec8f04;
+        padding: 10px  30px;
+        border-radius: 15px;
+        color: white;
+
+    }
+
+    .button_buy:hover {
+        text-align: center;
+        background-color: #ffa928;
+        padding: 10px  30px;
+        border-radius: 15px;
+        color: black;
+
     }
 }
 
