@@ -1,7 +1,8 @@
 const productContainers = [...document.querySelectorAll('.product-container,.product-container2')];
 
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn,.nxt-btn2')];
+const preBtn = [...document.querySelectorAll('.pre-btn,.pre-btn2')];
+
 
 productContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();

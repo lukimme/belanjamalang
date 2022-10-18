@@ -51,13 +51,15 @@ body {
 /* Fashion product */
 
 .heading {
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: -8px;
 }
 
 .heading h1 {
+    font-size: 25px;
     color: var(--text-color);
     font-weight: 600;
 }
@@ -69,73 +71,7 @@ body {
 .products-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap: 23px;
-}
-
-.box {
-    padding: 10px;
-    background: var(--bg-color);
-    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
-    border-radius: 8px;
-    display: grid;
-    row-gap: 14px;
-}
-
-.box img {
-    border-radius: 8px;
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    object-position: center;
-}
-
-.box-text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background: var(--bg-color);
-    padding: 10px;
-    border-radius: 14px;
-}
-
-.title-price h3 {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.title-price span {
-    font-weight: 500;
-}
-
-.box-text .bx {
-    padding: 10px;
-    font-size: 20px;
-    background: var(--text-color);
-    color: var(--bg-color);
-    border-radius: 40px;
-}
-
-.products-content .box-text {
-    background: var(--orange-color);
-}
-
-.products-content .box-text h3 {
-    color: var(--bg-color);
-}
-
-.products-content .box-text span {
-    color: var(--bg-color);
-}
-
-.products-content .box-text .bx {
-    background: var(--bg-color);
-    color: var(--orange-color);
-}
-
-.products-content .box-text .bx:hover {
-    background: var(--text-color);
-    color: var(--bg-color);
+    gap: 5px;
 }
 
 .product-box {
@@ -252,4 +188,18 @@ body {
     font-size: 10px;
     letter-spacing: 1px;
     z-index: 100;
+}
+
+@media (max-width: 624px) {
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .products-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+    }
+
+
 }

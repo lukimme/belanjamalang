@@ -1,0 +1,70 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Variables Colors */
+:root {
+    --orange-color: #ec8f04;
+    --light-orange-color: #ffa928;
+    --text-color: #333333;
+    --bg-color: #fff;
+    --new: #ec8f0473;
+}
+
+/* Custom Scroll Bar */
+html::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: var(--orange-color);
+}
+
+/* Produk Terlaris Start */
+section {
+    padding: 100px 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 968px;
+    margin: auto;
+    width: 100%;
+}
+
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    width: 400px;
+}
+
+.about-text h2 {
+    font-size: 20px;
+}
+
+.about-text p {
+    text-align: justify;
+    margin: 16px 0;
+}
