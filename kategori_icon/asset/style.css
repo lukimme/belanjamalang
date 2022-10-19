@@ -22,6 +22,7 @@ a {
 body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 .iconkat {
     width: 40px;
@@ -29,13 +30,6 @@ body {
 
 .fontkat {
     font-size: 12px;
-}
-
-.rowkat {
-    margin-top: 100px;
-    max-width: 968px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -50,6 +44,24 @@ body {
     margin-top: 60px;
 }
 
+
+/* Category icon */
+.wrapper {
+    /* border: 1px solid #acacac; */
+    display: flex;
+    /* margin-top: 50px; */
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.wrapper .item {
+    min-width: 110px;
+    /* line-height: 110px; */
+    margin-left: 20px;
+}
 
 
 
@@ -233,6 +245,12 @@ body {
     background: var(--text-color);
     color: var(--bg-color);
     border-radius: 40px;
+}
+
+.products {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .products-content .box-text {
@@ -456,14 +474,184 @@ body {
 
 
 /* Customer Cart */
+.con_cart_dekstop {
+    margin-top: 50px;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name_keranjang {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.selectall_hapus .del_item {
+    color: #ec8f04;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.shop_name {
+    font-size: 15px;
+}
+
+.address {
+    font-size: 13px;
+    margin-left: 22px;
+}
+
+.item .item_img {
+    width: 90px;
+    margin-left: 15px;
+}
+
+.diskon {
+    background-color: #ec8f04;
+    font-size: 13px;
+    color: white;
+    padding: 2px;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
+.price_original {
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 3px;
+}
+
+.item .item_name {
+    margin: 16px 0 0 23px;
+    font-size: 15px;
+}
+
+/* Button Plus&Minus */
+.quantity {
+    border-radius: 10px;
+  }
+
+  .quantity .input-text.qty {
+  width: 30px;
+  height: 35px;
+  padding: 15px 7px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  }
+
+  .quantity.buttons_added {
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top;
+  background-color: #f4efef;
+  margin: 0 100px;
+  }
+
+  .quantity.buttons_added input {
+  margin: 0;
+  vertical-align: top;
+  }
+
+  .quantity.buttons_added .minus,
+  .quantity.buttons_added .plus {
+  padding: 7px 10px 8px;
+  height: 35px;
+  background-color: #f4efef;
+  cursor:pointer;
+  border: none;
+  }
+
+  .quantity.buttons_added .minus:hover,
+  .quantity.buttons_added .plus:hover {
+  background: #e1d5b7f4;
+  border-radius: 8px;
+  }
+
+  .quantity input::-webkit-outer-spin-button,
+  .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+  }
+
+
+.address_item .icon_trash {
+    color: #111111;
+    font-size: 25px;
+}
+
+.address_item .icon_trash:hover {
+    color: #ffa928;
+    font-size: 25px;
+    background-color: #ede8e2;
+    border-radius: 10px;
+}
+
+
+/* Total */
+.con_total_mobile {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_buy {
+    text-align: center;
+    background-color: #ec8f04;
+    padding: 10px  30px;
+    border-radius: 15px;
+    color: white;
+
+}
+
+.button_buy:hover {
+    text-align: center;
+    background-color: #ffa928;
+    padding: 10px  30px;
+    border-radius: 15px;
+    color: black;
+
+}
+
+
+
+/* Tampilan Mobile */
 @media (max-width: 575.98px) {
+
+    /* Icon scroll mobile */
+
+    .wrapper {
+        /* border: 1px solid #acacac; */
+        display: flex;
+        /* margin-top: 50px; */
+        overflow-x: auto;
+    }
+
+    .iconkat {
+        width: 35px;
+    }
+
+    .wrapper::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .wrapper .item {
+        min-width: 110px;
+        /* line-height: 110px; */
+        margin-left: 0;
+    }
+
+
+
+    /* Cart */
     .con_cart_mobile {
         margin-top: 20px;
     }
 
-    /* .name_keranjang {
-
-    } */
+    .name_keranjang {
+        font-size: 23px;
+    }
 
     .selectall_hapus {
         /* padding-top: 12px; */
@@ -498,6 +686,7 @@ body {
 
     .address_item .icon_trash {
         color: #111111;
+        font-size: 20px;
     }
 
     .address {
@@ -534,10 +723,62 @@ body {
         margin: 13px 0 0 19px;
         font-size: 12px;
     }
-
     .purchase_quantity {
         font-size: 12px;
         text-align: right;
+    }
+    
+
+    /* Button Plus&Minus */
+    .quantity {
+        border-radius: 10px;
+    }
+
+    .quantity .input-text.qty {
+    width: 20px;
+    height: 25px;
+    /* padding: 7px 7px; */
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+    }
+
+    .quantity.buttons_added {
+    position: relative;
+    white-space: nowrap;
+    background-color: #f4efef;
+    width: 90px;
+    height: 35px;
+    margin-left: 30px;
+    }
+
+    .quantity.buttons_added input {
+    /* margin: 0; */
+    /* vertical-align: top; */
+    font-size: 18px;
+    }
+
+    .quantity.buttons_added .minus,
+    .quantity.buttons_added .plus {
+    padding: 2px 2px 2px;
+    height: 25px;
+    background-color: #f4efef;
+    cursor:pointer;
+    font-size: 18px;
+    }
+
+    .quantity.buttons_added .minus:hover,
+    .quantity.buttons_added .plus:hover {
+    background: #e1d5b7f4;
+    border-radius: 8px;
+    }
+
+    .quantity input::-webkit-outer-spin-button,
+    .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
     }
 
 
@@ -553,7 +794,7 @@ body {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         margin: 9px 20px;
-        gap: 2px;
+        gap: 3px;
     }
 
     .heading h1 {
@@ -727,7 +968,8 @@ body {
 
     /* Total */
     .con_total_mobile {
-        /* margin-top: 500px; */
+        /* position;
+        bottom: 10px; */
     }
 
     .card_total {
