@@ -637,7 +637,7 @@ body {
     }
 
     .wrapper .item {
-        min-width: 110px;
+        min-width: 95px;
         /* line-height: 110px; */
         margin-left: 0;
     }
