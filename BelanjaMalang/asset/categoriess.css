@@ -1,0 +1,355 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Variables Colors */
+:root {
+    --orange-color: #ec8f04;
+    --light-orange-color: #ffa928;
+    --text-color: #333333;
+    --bg-color: #fff;
+    --new: #ec8f0473;
+}
+
+section {
+    padding: 100px 0;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.humbergermenu {
+    grid-area: humber;
+    color: var(--orange-color);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+}
+
+/* Container Categories */
+.container-categories {
+    /* column-gap: 18px; */
+    max-width: 968px;
+    margin: 40px auto;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header_ header_ header_"
+        "short short short"
+        "humber humber humber"
+        "side-bar main main"
+        "side-bar main main"
+        "side-bar main main";
+
+    grid-template-rows: 180px 50px 20px 1fr 1fr 1fr;
+    grid-template-columns: 212px 1fr 1fr;
+}
+
+/* Header */
+.header_ {
+    border-radius: 8px;
+    background-color: var(--orange-color);
+    grid-area: header_;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+}
+
+.header_ h3 {
+    margin-top: 80px;
+    text-align: center;
+    color: var(--bg-color);
+    text-decoration: underline;
+}
+
+/* link */
+.short {
+    padding-left: 5px;
+    padding-top: 8px;
+    display: flex;
+    list-style: none;
+    border-radius: 8px;
+    /* width: 21%; */
+    background-color: red;
+    grid-area: short;
+    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+    background: var(--bg-color);
+    margin-bottom: 10px;
+
+}
+
+.short li a {
+    text-align: center;
+    color: var(--orange-color);
+    text-decoration: none;
+}
+
+.short li a span {
+    color: var(--orange-color);
+}
+
+.short li a {
+    color: var(--orange-color);
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.short li a span {
+    color: var(--orange-color);
+}
+
+.short li a:hover {
+    transition: .3s ease;
+    color: var(--text-color);
+
+}
+
+.short li a:hover {
+    transition: .3s ease;
+    color: var(--text-color);
+
+}
+
+/* content */
+.main-content {
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--bg-color);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.box {
+    border-radius: 8px;
+    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+    padding: 10px;
+    background: var(--bg-color);
+    display: grid;
+    row-gap: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.box img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box {
+    border-radius: 8px;
+
+}
+
+.box-text {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--bg-color);
+    border-radius: 8px;
+    background: var(--orange-color);
+}
+
+.title-price h3 {
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title-price a h3:hover {
+    transition: .3s ease;
+    color: var(--text-color);
+}
+
+.title-price span {
+    padding-right: 70px;
+    font-weight: 500;
+}
+
+.box-text .bx {
+    padding: 10px;
+    font-size: 20px;
+    background: var(--bg-color);
+    color: var(--orange-color);
+    border-radius: 40px;
+}
+
+.box-text .bx:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* .box {
+    border-radius: 8px;
+    box-shadow: 1px 2px 9px 4px rgb(14 55 54 / 15%);
+    padding: 10px;
+    background: var(--bg-color);
+    display: grid;
+    row-gap: 18px;
+    max-width: 228px;
+    max-height: 340px;
+    margin-bottom: 20px;
+}
+
+.box img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+ */
+
+/* side-bar */
+.side-bar {
+    list-style: none;
+    border-radius: 8px;
+    padding-top: 13px;
+    padding-left: 20px;
+    height: 30vh;
+    background-color: var(--orange-color);
+    grid-area: side-bar;
+    margin-right: 0px;
+}
+
+.side-bar li a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+.side-bar li a:hover {
+    color: var(--text-color);
+    transition: .3s ease;
+}
+
+@media screen and (max-width: 980px) {
+    .main-content {
+        margin-right: 20px;
+        margin-top: 8px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .side-bar {
+        min-height: 11vh;
+    }
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 660px) {
+
+    .humbergermenu {
+        display: initial;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    .container-categories {
+        grid-template-areas:
+            "header_ header_"
+            "short short"
+            "humber humber"
+            "main main"
+            "main main"
+            "main main";
+        grid-template-rows: 180px 50px 30px 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header_ {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .short {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .side-bar {
+        padding-top: 5px;
+        position: absolute;
+        top: 30px;
+        /* height: 0; */
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 93%;
+        transition: .2s all linear;
+        text-align: left;
+        display: none;
+
+    }
+
+    .side-bar.active {
+        display: block;
+    }
+
+    .main-content {
+        margin-right: 20px;
+        margin-top: 8px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-text {
+        padding: 10px;
+        display: flex;
+        align-items: none;
+        justify-content: space-between;
+        /* padding: 10px; */
+        /* padding: 0; */
+    }
+
+    .title-price h3 {
+        font-size: 14px;
+    }
+
+    .title-price span {
+        padding-right: 13px;
+    }
+
+    .box-text .bx {
+        margin-top: 33px;
+        padding: 7px;
+        font-size: 18px;
+        background: var(--bg-color);
+        color: var(--orange-color);
+        border-radius: 40px;
+    }
+
+
+
+    /* .box {
+        max-width: 120px;
+        max-height: 340px;
+        margin-bottom: 20px;
+    }
+
+    .box img {
+        border-radius: 8px;
+        width: 100px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    .title-price span {
+        padding-right: 0px;
+        font-weight: 500;
+    } */
+}
